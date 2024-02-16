@@ -4,7 +4,7 @@
 #include "parser.tab.h"
 #include "codegen.h"
 
-extern FILE **yyout;
+extern FILE *yyout;
 extern int yylex (void);
 
 extern T_statement_list ast;
