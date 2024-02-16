@@ -42,7 +42,7 @@ program
 
 statement_list
     : /* empty */ { $$ = NULL; }
-    | statement statement_list { $$ = create_statemnet_list($1, $2); }
+    | statement statement_list { $$ = create_statement_list($1, $2); }
     ;
 
 statement 
