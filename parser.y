@@ -17,7 +17,7 @@
 %}
 
     %token <intval> NUMBER
-    %token <charval> operator
+    %token <charval> OPERATOR
     %start program
 
     %union value {
