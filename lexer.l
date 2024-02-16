@@ -13,7 +13,7 @@
 
 %% 
 
-[0-9]               { ECHO; yylval.intval = atoi(yytext); return(NUMBER) }
+[0-9]               { ECHO; yylval.intval = atoi(yytext); return(NUMBER); }
 ";"                 { ECHO; return(';'); }
 "+"|"-"|"*"|"/"     { ECHO; yylval.charval = yytext[0]; return(OPERATOR); }
 
